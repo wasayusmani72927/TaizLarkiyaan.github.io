@@ -1,0 +1,221 @@
+.backgroundImage {
+
+  background-image: url("../../assets/TaizLarkiyan.png");
+  
+  height: 100%;
+  background-repeat: no-repeat;
+
+
+}
+
+.id1 {
+  position: absolute;
+  top: 12%;
+  left: 23%;
+
+  height: 26%;
+  width: 18%;
+}
+
+.id1:hover {
+  border: 6px solid #06273f;
+  border-radius: 8px;
+}
+
+.tooltip1 {
+  position: relative;
+  display: inline-block;
+  // border-bottom: 1px dotted black;
+}
+
+.tooltip1 .tooltiptext1 {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip1 .tooltiptext1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.id2 {
+  position: absolute;
+  top: 47%;
+  left: -3%;
+
+  height: 28%;
+  width: 14%;
+}
+
+.id2:hover {
+  border: 6px solid #06273f;
+  border-radius: 8px;
+}
+
+.tooltip2 {
+  position: relative;
+  display: inline-block;
+  // border-bottom: 1px dotted black;
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip2 .tooltiptext2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.id3 {
+  position: absolute;
+  top: 38%;
+  left: 29%;
+
+  height: 29%;
+  width: 16%;
+}
+
+.id3:hover {
+  border: 6px solid 06273f;
+  border-radius: 8px;
+}
+
+.tooltip3 {
+  position: relative;
+  display: inline-block;
+  // border-bottom: 1px dotted black;
+}
+
+.tooltip3 .tooltiptext3 {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip3 .tooltiptext3::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip3:hover .tooltiptext3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.id4 {
+  position: absolute;
+  top: 70%;
+  left: 26%;
+
+  height: 29%;
+  width: 16%;
+}
+
+.id4:hover {
+  border: 6px solid #06273f;
+  border-radius: 8px;
+}
+
+.tooltip4 {
+  position: relative;
+  display: inline-block;
+  // border-bottom: 1px dotted black;
+}
+
+.tooltip4 .tooltiptext4 {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip4 .tooltiptext4::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip4:hover .tooltiptext4 {
+  visibility: visible;
+  opacity: 1;
+}
