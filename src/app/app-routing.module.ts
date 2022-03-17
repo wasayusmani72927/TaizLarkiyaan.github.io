@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CarosoulPageComponent } from './carosoul-page/carosoul-page.component';
 import { EssentialArtifactsComponent } from './essential-artifacts/essential-artifacts.component';
@@ -23,8 +23,10 @@ const routes: Routes = [
     path: 'puzzle',
     component: PuzzlePageComponent,
   },
-  { path: '**', redirectTo: '/homepage' },
+  
 ];
+
+export const routing: ModuleWithProviders<unknown> = RouterModule.forRoot(routes);
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

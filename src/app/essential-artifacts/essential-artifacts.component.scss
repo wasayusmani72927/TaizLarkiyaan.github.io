@@ -15,13 +15,12 @@
   /* Safari */
   display: flex;
   /* Standard syntax */
-  padding: 16px 0px;
   overflow-x: hidden;
 }
 
 .content1 {
-  height: calc(100vh - 93px);
-  padding: 4px;
+  height: 90vh;
+  padding: 1%;
   -webkit-flex: 1;
   /* Safari */
   -ms-flex: 1;
@@ -36,13 +35,24 @@ img {
 }
 
 .content2 {
-  font-size: 24px;
-  font-weight: 600;
-  padding: 16px;
+  
+  padding-top: 5px;
   -webkit-flex: 1;
   /* Safari */
   -ms-flex: 1;
   /* IE 10 */
   flex: 1;
   /* Standard syntax */
+}
+
+@media only screen and (max-width: 1000px) {
+  .content2 {
+    margin-top: -12px;
+    -webkit-flex: 1;
+    /* Safari */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    /* Standard syntax */
+  }
 }

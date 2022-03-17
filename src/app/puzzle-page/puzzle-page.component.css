@@ -1,0 +1,20 @@
+.wallpaper {
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-image: url("../../assets/EssentialAgreementgreen.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.rot36 {
+  -webkit-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+
+.rotm36 {
+  -webkit-transform: rotate(-36deg);
+  transform: rotate(-36deg);
+}
+/*# sourceMappingURL=puzzle-page.component.css.map */

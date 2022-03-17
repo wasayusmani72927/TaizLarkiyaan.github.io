@@ -1,0 +1,6 @@
+.container {
+  overflow-x: hidden;
+  width: calc(100vw);
+  height: calc(100vh - 0px);
+}
+/*# sourceMappingURL=app.component.css.map */

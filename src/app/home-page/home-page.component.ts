@@ -5,6 +5,7 @@ import {
   ElementRef,
   OnInit
 } from '@angular/core';
+
 declare var $: any;
 
 

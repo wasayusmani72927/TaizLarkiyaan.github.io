@@ -10,6 +10,7 @@ import { EssentialArtifactsComponent } from './essential-artifacts/essential-art
 import { CommonModule } from '@angular/common';
 import {CrystalLightboxModule} from '@crystalui/angular-lightbox';
 import { LightboxModule } from 'ngx-lightbox';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { LightboxModule } from 'ngx-lightbox';
     CarosoulPageComponent,
     EssentialArtifactsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, CommonModule, CrystalLightboxModule,LightboxModule],
+  imports: [BrowserModule, AppRoutingModule, CommonModule, CrystalLightboxModule,LightboxModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

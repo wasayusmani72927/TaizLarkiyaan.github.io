@@ -13,11 +13,11 @@ import {
 })
 export class PuzzlePageComponent implements OnInit {
   _albums = [{
-    src: "./../../assets/EA1.jpg",
-    thumb: "./../../assets/EA1.jpg"
-  }, {
     src: "./../../assets/EA2.jpg",
     thumb: "./../../assets/EA2.jpg"
+  }, {
+    src: "./../../assets/EA1.jpg",
+    thumb: "./../../assets/EA1.jpg"
   }, {
     src: "./../../assets/EA3.jpg",
     thumb: "./../../assets/EA3.jpg"
@@ -28,7 +28,7 @@ export class PuzzlePageComponent implements OnInit {
   ngOnInit(): void {}
   open(index: number): void {
     // open lightbox
-    this._lightbox.open(this._albums, index);
+    this._lightbox.open(this._albums, index,{showZoom: true});
   }
 
   close(): void {

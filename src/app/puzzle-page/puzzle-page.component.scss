@@ -1,10 +1,10 @@
 .wallpaper {
   object-fit: fill;
   background-image: url("../../assets/puzzle.jpeg");
-  background-size: cover;
+  background-size:auto;
   height: 100%;
   width: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 .Row {
@@ -16,4 +16,11 @@
 
 .Column {
   display: table-cell;
+}
+
+img {
+    border: solid 5px transparent;
+}
+img:hover {
+    border-color: green;
 }
