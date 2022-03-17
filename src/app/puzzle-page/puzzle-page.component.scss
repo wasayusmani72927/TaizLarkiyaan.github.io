@@ -1,24 +1,26 @@
 .wallpaper {
   object-fit: fill;
-  background-image: url("../../assets/EssentialAgreementgreen.jpg");
-  background-size: cover;
+  background-image: url("../../assets/background.jpg");
+  background-size:auto;
   height: 100%;
   width: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
-.rot36 {
-  -webkit-transform: rotate(36deg);
-  -moz-transform: rotate(36deg);
-  -ms-transform: rotate(36deg);
-  -o-transform: rotate(36deg);
-  transform: rotate(36deg);
+.Row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 10px;
 }
 
-.rotm36 {
-  -webkit-transform: rotate(-36deg);
-  -moz-transform: rotate(-36deg);
-  -ms-transform: rotate(-36deg);
-  -o-transform: rotate(-36deg);
-  transform: rotate(-36deg);
+.Column {
+  display: table-cell;
+}
+
+img {
+    border: solid 5px transparent;
+}
+img:hover {
+    border-color: green;
 }

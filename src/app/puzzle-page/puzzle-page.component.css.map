@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,UAAU,EAAE,IAAI;EAChB,gBAAgB,EAAE,+CAA+C;EACjE,eAAe,EAAE,KAAK;EACtB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,iBAAiB,EAAE,SAAS;CAC7B;;AAED,AAAA,MAAM,CAAC;EACL,iBAAiB,EAAE,aAAa;EAChC,cAAc,EAAE,aAAa;EAC7B,aAAa,EAAE,aAAa;EAC5B,YAAY,EAAE,aAAa;EAC3B,SAAS,EAAE,aAAa;CACzB;;AAED,AAAA,OAAO,CAAC;EACN,iBAAiB,EAAE,cAAc;EACjC,cAAc,EAAE,cAAc;EAC9B,aAAa,EAAE,cAAc;EAC7B,YAAY,EAAE,cAAc;EAC5B,SAAS,EAAE,cAAc;CAC1B",
+    "sources": [
+        "puzzle-page.component.scss"
+    ],
+    "names": [],
+    "file": "puzzle-page.component.css"
+}

@@ -1,14 +1,52 @@
+<div class="wallpaper">
+  <div style="width: 100%;">
+    <div style="width: 30%; height: 100px; float: left;margin-left: 5%;margin-top: 2.5%;">
+      <div>These found pages appear to be part of a personal fashion catalogue or a fashion zine. There doesn’t seem to
+        be a rigid design or formula these pages follow, but the composition of the elements on the pages (text as well
+        as images) is free-flowing. We see an amalgamation of hand-drawn elements coupled with whimsical illustrations
+        that document sketched ideas, prototypes, and inspirations.
+      </div><br>
+      <div>The choice of paper, jute paper, reveals how self-sufficient as well as environmentally safe the society is,
+        where creators and consumers are mindful of what they create and share in respect to their surroundings. This
+        mindfulness is also captured and communicated through the materiality as well as the creative genius specified
+        through these pages. We find great insight in these pages, into the lifestyle of the inhabitants of the space.
+        We may dissect how these pieces belong to a world where people use their emotions to identify themselves, and
+        feelings play a pivotal role in not only fashion but their personal and collective identities; such as
+        communicated through the text complementing the “Handcuff Illustration” where the design tries to “illustrate
+        their insecurities and the journey of their personal growth”. </div><br>
+      <div>Moreover, the depiction of the human body in these drawings is very fluid. The artists who have worked on
+        these designs and drawings, do not appear to be looking at the human body through a gendered lens. We do not see
+        any particular gender binaries pertaining to the garments they wear or the accessories they adorn themselves
+        with; the accessories themselves employ recycled materials and their iconography consists of patterns, rhythm
+        and forms found in nature and the organic world.</div><br>
+      <div>The prose-like text we read entails how these decisions and creative inspirations are not restricted to any
+        particular individual’s visual language or a personal lexicon but they are a reflection of the society’s
+        collective vernacular. </div><br>
+      <div>The text in the background as well as the personalized notes reveal their peoples’ ability, and perhaps,
+        ambition to transform while being seamlessly woven together, continuously creating, nurturing, giving, and
+        receiving. The colours and patterns seem to honour their collective beliefs as well as their ties to the natural
+        world, where the inhabitants ‘adorn themselves with nature’s gifts and scribble memories across our bodies’. The
+        softness of the material, as presented in the zine, the folds of the fabric, and the fluidity present in figures
+        allude to organic bodies and structures- like the ocean which swells and falls. This zine, although perhaps a
+        mundane object from this alternate world, offers itself as an heirloom or a historical record; preserving the
+        customs, values, and inspirations of the people of this world.</div>
+    </div>
 
-<div class="book-section">
-  <div class="container">
-    <div class="right" *ngFor="let page of pages; index as i">
-      <figure *ngIf="i === 0" class="back" id="back-cover"></figure>
-      <figure *ngIf="i !== 0" class="front" style="background-image: url({{pages[i-1]}});"></figure>
-      <figure *ngIf="i !== 0" class="back" style="background-image: url({{pages[i-1]}});"></figure>
-      <figure class="front" style="background-image: url({{page}});"></figure>
+    <div style="margin-left: 50%;  margin-right: 15%;">
+      <div class="book-section">
+
+        <div class="container" >
+          <div class="right" *ngFor="let page of pages; index as i">
+            <figure *ngIf="i === 0" class="back" id="back-cover"></figure>
+            <figure *ngIf="i !== 0" class="front" style="background-image: url({{pages[i-1]}});"></figure>
+            <figure *ngIf="i !== 0" class="back" style="background-image: url({{pages[i-1]}});"></figure>
+            <figure class="front" style="background-image: url({{page}});"></figure>
+          </div>
+        </div>
+        <button (click)="turnLeft()">Prev</button>
+        <button (click)="turnRight()">Next</button>
+        <br />
+      </div>
     </div>
   </div>
-  <button (click)="turnLeft()">Prev</button>
-  <button (click)="turnRight()">Next</button>
-  <br />
 </div>

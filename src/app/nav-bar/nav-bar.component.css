@@ -1,8 +1,10 @@
 .navMenu {
   width: 100%;
   text-align: center;
-  background-color: #fee2e6;
-  height: 30px;
+  padding-top: 15px;
+  background-color: #ff9cac;
+  height: 60px;
+  padding-top: 16px;
   position: relative;
   z-index: 1;
 }
@@ -12,15 +14,17 @@
 }
 
 .navMenu a {
-  color: #444a49;
+  color: #19958f;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 24px;
+  text-transform: uppercase;
   font-weight: 600;
-
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .navMenu a:hover {
   color: red;
+  border-bottom: 4px solid red;
 }
+/*# sourceMappingURL=nav-bar.component.css.map */

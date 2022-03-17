@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+import {
+  Lightbox
+} from 'ngx-lightbox';
 
 @Component({
   selector: 'app-puzzle-page',
@@ -6,7 +12,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./puzzle-page.component.scss'],
 })
 export class PuzzlePageComponent implements OnInit {
-  constructor() {}
+  _albums = [{
+    src: "./../../assets/EA2.jpg",
+    thumb: "./../../assets/EA2.jpg"
+  }, {
+    src: "./../../assets/EA1.jpg",
+    thumb: "./../../assets/EA1.jpg"
+  }, {
+    src: "./../../assets/EA3.jpg",
+    thumb: "./../../assets/EA3.jpg"
+  }];
+  private _album: [];
+  constructor(private _lightbox: Lightbox) {}
 
   ngOnInit(): void {}
+  open(index: number): void {
+    // open lightbox
+    this._lightbox.open(this._albums, index,{showZoom: true});
+  }
+
+  close(): void {
+    // close lightbox programmatically
+    this._lightbox.close();
+  }
 }
