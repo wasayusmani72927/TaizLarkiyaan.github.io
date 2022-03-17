@@ -1,9 +1,20 @@
+.wallpaper {
+  object-fit: fill;
+  background-image: url("../../assets/puzzle.jpeg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
 .container {
   width: 80%;
   min-height: 300px;
   margin: 0 auto;
-  display: -webkit-flex; /* Safari */
-  display: flex; /* Standard syntax */
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  /* Standard syntax */
   padding: 16px 0px;
   overflow-x: hidden;
 }
@@ -11,10 +22,14 @@
 .content1 {
   height: calc(100vh - 93px);
   padding: 4px;
-  -webkit-flex: 1; /* Safari */
-  -ms-flex: 1; /* IE 10 */
-  flex: 1; /* Standard syntax */
+  -webkit-flex: 1;
+  /* Safari */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+  /* Standard syntax */
 }
+
 img {
   width: 100%;
   height: 100%;
@@ -24,7 +39,10 @@ img {
   font-size: 24px;
   font-weight: 600;
   padding: 16px;
-  -webkit-flex: 1; /* Safari */
-  -ms-flex: 1; /* IE 10 */
-  flex: 1; /* Standard syntax */
+  -webkit-flex: 1;
+  /* Safari */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+  /* Standard syntax */
 }

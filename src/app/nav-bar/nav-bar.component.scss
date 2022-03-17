@@ -1,9 +1,12 @@
 .navMenu {
+  width: 100%;
   text-align: center;
   padding-top: 15px;
   background-color: #ff9cac;
   height: 60px;
   padding-top: 16px;
+  position: relative;
+  z-index: 1;
 }
 
 .ml8 {

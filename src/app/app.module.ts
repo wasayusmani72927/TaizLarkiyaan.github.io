@@ -8,6 +8,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CarosoulPageComponent } from './carosoul-page/carosoul-page.component';
 import { EssentialArtifactsComponent } from './essential-artifacts/essential-artifacts.component';
 import { CommonModule } from '@angular/common';
+import {CrystalLightboxModule} from '@crystalui/angular-lightbox';
+import { LightboxModule } from 'ngx-lightbox';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,7 @@ import { CommonModule } from '@angular/common';
     CarosoulPageComponent,
     EssentialArtifactsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, CommonModule],
+  imports: [BrowserModule, AppRoutingModule, CommonModule, CrystalLightboxModule,LightboxModule],
   providers: [],
   bootstrap: [AppComponent],
 })

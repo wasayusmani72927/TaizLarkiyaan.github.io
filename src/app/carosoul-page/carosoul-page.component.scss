@@ -1,10 +1,20 @@
+.wallpaper {
+  object-fit: fill;
+  background-image: url("../../assets/puzzle.jpeg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
 .book-section {
   height: 100vh;
   width: 100%;
   padding: 40px 0;
   text-align: center;
 }
-.book-section > .container {
+
+.book-section>.container {
   height: 700px;
   width: 1200px;
   position: relative;
@@ -15,20 +25,23 @@
   perspective: 1200px;
   // background-color: black;
 }
-.container > .right {
+
+.container>.right {
   position: absolute;
   height: 100%;
   width: 50%;
   transition: 0.3s ease-in-out;
   transform-style: preserve-3d;
 }
-.book-section > .container > .right {
+
+.book-section>.container>.right {
   right: 0;
   transform-origin: left;
   border-radius: 10px 0 0 10px;
 }
-.right > figure.front,
-.right > figure.back {
+
+.right>figure.front,
+.right>figure.back {
   margin: 0;
   height: 100%;
   width: 100%;
@@ -41,20 +54,24 @@
   background-color: white;
   overflow: hidden;
 }
-.right > figure.front {
+
+.right>figure.front {
   background-position: right;
   border-radius: 0 10px 10px 0;
   box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.2);
 }
-.right > figure.back {
+
+.right>figure.back {
   background-position: left;
   border-radius: 10px 0 0 10px;
   box-shadow: -2px 2px 15px -2px rgba(0, 0, 0, 0.2);
   transform: rotateY(180deg);
 }
+
 .flip {
   transform: rotateY(-180deg);
 }
+
 .flip::before {
   content: "";
   position: absolute;
@@ -66,7 +83,8 @@
   border-radius: 0 10px 10px 0;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.book-section > button {
+
+.book-section>button {
   border: 2px solid #19958f;
   background-color: transparent;
   color: #19958f;
@@ -76,23 +94,28 @@
   margin: 10px;
   transition: 0.3s ease-in-out;
 }
-.book-section > button:focus,
-.book-section > button:active {
+
+.book-section>button:focus,
+.book-section>button:active {
   outline: none;
 }
-.book-section > p {
+
+.book-section>p {
   color: rgba(0, 0, 0, 0.7);
   font-family: calibri;
   font-size: 24px;
 }
-.book-section > p > a {
+
+.book-section>p>a {
   text-decoration: none;
   color: #ef9f00;
 }
-.book-section > button:hover {
+
+.book-section>button:hover {
   background-color: #ff9cac;
   color: #fff;
 }
+
 .front#cover,
 .back#back-cover {
   background-color: burlywood;
@@ -100,9 +123,11 @@
   text-align: left;
   padding: 0 30px;
 }
+
 .front#cover h1 {
   color: #fff;
 }
+
 .front#cover p {
   color: rgba(0, 0, 0, 0.8);
   font-size: 14px;
