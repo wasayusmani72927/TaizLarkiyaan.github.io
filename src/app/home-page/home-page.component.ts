@@ -3,8 +3,10 @@ import {
   AfterViewInit,
   ViewChild,
   ElementRef,
-  OnInit
+  OnInit,
+  ViewEncapsulation
 } from '@angular/core';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 declare var $: any;
 
@@ -16,10 +18,11 @@ declare var $: any;
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() {}
+  constructor(private _snackBar: MatSnackBar) {}
 
 
   ngOnInit() {
+    this._snackBar.open("Are you ready to explore this land? Move your cursor to sightsee!","", {horizontalPosition: 'right', duration: 8000});
     $("img[usemap]:first").mapify({
       hoverClass: "drop-hover",
       popOver: {

@@ -11,6 +11,8 @@ import { CommonModule } from '@angular/common';
 import {CrystalLightboxModule} from '@crystalui/angular-lightbox';
 import { LightboxModule } from 'ngx-lightbox';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CarosoulPageComponent,
     EssentialArtifactsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, CommonModule, CrystalLightboxModule,LightboxModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, CommonModule, CrystalLightboxModule,LightboxModule, BrowserAnimationsModule, MatSnackBarModule],
   providers: [],
   bootstrap: [AppComponent],
 })
